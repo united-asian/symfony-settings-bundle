@@ -1,0 +1,8 @@
+parameters:
+    uam_settings.form.type.settings.class: UAM\Bundle\SettingsBundle\Form\Type\SettingsFormType
+
+services:
+    uam_settings.form.type.settings:
+        class: %uam_address.form.type.settings.class%
+        tags:
+            - { name: form.type, alias: uam_settings }

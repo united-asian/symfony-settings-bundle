@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>   <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>      <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>      <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    {% block uam_settings_head_style %}
+    {% endblock %}
+</head>
+<body class="{% block uam_settings_page_class %}{% endblock %}">
+    {% block uam_settings_page_nav %}{% endblock %}
+    {% block uam_settings_page_title %}{% endblock %}
+    {% block uam_settings_content %}{% block body_class %}{% endblock %}{% endblock %}
+    {% block uam_settings_foot_script %}{% endblock %}
+</body>
+</html>
